@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="container">
+  <div class="main" id="main">
     <div class="block">
       <h6 class="block-title"><span>节点概览</span></h6>
       <ul class="overview">
@@ -90,7 +90,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .container {
+  .main {
     overflow: hidden;
     flex-grow: 1;
     /*margin-left: 17.916%;*/

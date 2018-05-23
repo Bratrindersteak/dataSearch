@@ -5,9 +5,9 @@
         <img src="../img/user.png" width="40" class="user-profile" /><span class="user-name">网络管理员</span>
       </div>
       <ul class="nav" id="nav">
-        <li class="item active">集群状态</li>
-        <li class="item">管理库</li>
-        <li class="item">用户管理</li>
+        <li class="item active"><router-link class="link" to="/clusterState">集群状态</router-link></li>
+        <li class="item"><router-link class="link" to="/manageBase">管理库</router-link></li>
+        <li class="item"><router-link class="link" to="/userManagement">用户管理</router-link></li>
       </ul>
     </div>
   </div>
@@ -57,10 +57,6 @@
     position: relative;
     height: 48px;
     line-height: 48px;
-    padding-left: 47px;
-    font-size: 1.4rem;
-    color: #999999;
-    cursor: pointer;
   }
 
   .nav .item:after {
@@ -70,6 +66,13 @@
     left: 0;
     width: 47px;
     height: 48px;
+  }
+
+  .link {
+    display: block;
+    padding-left: 47px;
+    font-size: 1.4rem;
+    color: #999999;
   }
 
   .nav .item:nth-child(1):after {
@@ -90,7 +93,7 @@
     background-size: 15px 15px;
   }
 
-  .nav .item:hover, .nav .active {
+  .nav .item:hover, .nav .active .link {
     background-color: #f7f9ff;
     color: #769af3;
   }
