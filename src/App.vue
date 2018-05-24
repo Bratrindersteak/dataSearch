@@ -20,6 +20,7 @@ export default {
     font-size: 10px;
   }
 
+  @media screen and (min-width:1280px){html{font-size: 10px}}
   @media screen and (min-width:1200px) and (max-width:1279px){html{font-size: 8px}}
   @media screen and (max-width:1200px){html{font-size: 6px}}
 
