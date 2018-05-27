@@ -18,7 +18,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .menu {
-    /*position: fixed;*/
+    flex: none;
     width: 17.916%;
     min-width: 160px;
     /*width: 258px;*/
