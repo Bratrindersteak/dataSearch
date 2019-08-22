@@ -205,3 +205,48 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	</div>
 </body>
 </html>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+# JavaScript 中的相等性判断
+
+- 非严格相等比较 (==)
+
+- 严格相等比较 (===)
+
+- Object.is() 方法判断两个值是否是相同的值。
+```
+Object.is(value1, value2); // return true or false
+```
+----------------------------------------------------------------------------------------------------------------------------------------
+vim /etc/bash.bashrc
+
+alias // 查看alias命令列表
+
+alias ll='ls -l' // 添加单条alias
+unalias ll  // 取消单条alias
+
+source /etc/bash/bashrc  // 执行保存
+----------------------------------------------------------------------------------------------------------------------------------------
+/**
+ * Adds some values.
+ *
+ * @func
+ * @category Math
+ * @param {Number}
+ * @return {Number}
+ * @example
+ *
+ *      add(1, 2, 3, 4); // 10
+ *      add(36, 42);     // 78
+ *      add(1);          // 1
+ *      add();           // 0
+ */
+
+function add() {
+	var array = [].slice.call(arguments);
+	var result = array.reduce(function(prev, curr) {
+		return prev + curr;
+	}, 0);
+
+	return result;
+}
